@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Microsoft YaHei';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Microsoft YaHei Light'), local('OpenSans-Light'), url(../fonts/open-sans-light.woff) format('woff');
+}
+@font-face {
+  font-family: 'Microsoft YaHei';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Microsoft YaHei'), local('OpenSans'), url(../fonts/open-sans-normal.woff) format('woff');
+}
+@font-face {
+  font-family: 'Microsoft YaHei';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Microsoft YaHei Bold'), local('OpenSans-Bold'), url(../fonts/open-sans-bold.woff) format('woff');
+}

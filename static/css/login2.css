@@ -1,0 +1,348 @@
+@font-face {
+    font-family: "myfont";
+    src: url("/fonts/helveticaneue-light-webfont.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'HelveticaNeue-UltraLight';
+    src: url('/fonts/HelveticaNeue-UltraLight.otf') format('opentype');
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #b4b4b5;
+    font-family: myfont, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    background-image: url("/static/img/LoginBackground.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+}
+
+.hdfont {
+    font-family: HelveticaNeue-UltraLight, Helvetica Neue Ultra Light;
+    font-size: 27px;
+    padding-top: 16px;
+    float: left;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+span {
+    color: white;
+}
+
+.buttonclass {
+    width: 100%;
+    border-radius: 3px;
+    height: 32px;
+}
+
+.inpttxt {
+    width: 100%;
+    border: solid 1px #353c44;
+    height: 32px;
+    font-size: 13px;
+    border-radius: 5px;
+    padding-left: 6px;
+}
+
+    .inpttxt::-webkit-input-placeholder {
+        text-align: left;
+    }
+
+    .inpttxt:-moz-placeholder {
+        text-align: left;
+    }
+
+    .inpttxt::-moz-placeholder {
+        text-align: left;
+    }
+
+    .inpttxt:-ms-input-placeholder {
+        text-align: left;
+    }
+
+    .inpttxt:focus {
+        outline: 0;
+        background-color: #fff !important;
+    }
+
+ul {
+    list-style-type: square;
+}
+
+.linesep {
+    height: 27px;
+    float: left;
+    margin: 0px 15px;
+    font-size: 16px;
+    line-height: 45px;
+    border-right: #6d6d6d solid 1px;
+    margin-top: 12px;
+}
+
+.myButton {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f00), color-stop(1, #c00));
+    background: -moz-linear-gradient(top, #f00 5%, #c00 100%);
+    background: -webkit-linear-gradient(top, #f00 5%, #c00 100%);
+    background: -o-linear-gradient(top, #f00 5%, #c00 100%);
+    background: -ms-linear-gradient(top, #f00 5%, #c00 100%);
+    background: linear-gradient(to bottom, #f00 5%, #c00 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff0000', endColorstr='#ffcc0000',GradientType=0);
+    background-color: #f00;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    font-family: myfont;
+    font-size: 15px;
+    font-weight: normal;
+    text-decoration: none;
+    border: 0px;
+}
+
+    .myButton:hover {
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c00), color-stop(1, #f00));
+        background: -moz-linear-gradient(top, #c00 5%, #f00 100%);
+        background: -webkit-linear-gradient(top, #c00 5%, #f00 100%);
+        background: -o-linear-gradient(top, #c00 5%, #f00 100%);
+        background: -ms-linear-gradient(top, #c00 5%, #f00 100%);
+        background: linear-gradient(to bottom, #c00 5%, #f00 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcc0000', endColorstr='#ffff0000',GradientType=0);
+        background-color: #c00;
+    }
+
+    .myButton:active {
+        position: relative;
+        top: 1px;
+    }
+
+
+
+.bottomlinks {
+    color: #9e9c9e;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.errmsg {
+    margin: 0px auto;
+    color: #fff;
+    width: 90%;
+    font-size: 30px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.strtpop {
+    border-radius: 4px;
+    z-index: 1331 !important;
+    background-color: #fff;
+    position: absolute;
+    outline: 0;
+}
+
+#lightbox {
+    display: none;
+    z-index: 1330;
+    opacity: 0.7;
+    background: #000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#disclaimerpopup {
+    display: none;
+    color: #414141;
+    height: auto;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    z-index: 1330;
+    border: none;
+    z-index: 1331;
+    margin: -65px 0 0 -40%;
+    padding: 15px;
+    border-radius: 10px;
+    position: absolute;
+    background-color: #fff;
+}
+
+.dmsel {
+    padding: 10px 0px 8px 0px;
+}
+
+.lnks {
+    text-align: left;
+    margin: 9px 0px 15px 0px;
+}
+
+.logo {
+    width: 100%;
+    padding: 10px 0 15px 0;
+    float: left;
+    line-height: 51px;
+}
+
+.disc {
+    text-align: justify;
+    font-size: 9px;
+    padding-top: 10px;
+    line-height: 12.85px;
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 200px) {
+    .centered {
+        position: fixed;
+        width: 100%;
+        top: 0%;
+        left: 0%;
+        text-align: left;
+        background-image: url("/static/img/boxstrip.png");
+        background-repeat: repeat-x;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        height: 100%;
+        background-size: contain;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 430px) {
+    .centered {
+        position: fixed;
+        width: 100%;
+        top: 0%;
+        left: 10%;
+        text-align: left;
+        background-image: url("/static/img/boxstrip.png");
+        background-repeat: repeat-x;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        height: 100%;
+        background-size: contain;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 600px) {
+    .centered {
+        position: fixed;
+        width: 50%;
+        top: 0%;
+        left: 10%;
+        text-align: left;
+        background-image: url("/static/img/boxstrip.png");
+        background-repeat: repeat-x;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        height: auto;
+        background-size: contain;
+    }
+}
+
+@media only screen and (min-width: 870px) {
+    .centered {
+        position: fixed;
+        width: 35%;
+        top: 0%;
+        left: 70%;
+        text-align: left;
+        background-image: url("/static/img/boxstrip.png");
+        background-repeat: repeat-x;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        height: auto;
+        background-size: contain;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+    .centered {
+        position: fixed;
+        width: 28%;
+        top: 0%;
+        left: 65%;
+        text-align: left;
+        background-image: url("/static/img/boxstrip.png");
+        background-repeat: repeat-x;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        height: auto;
+        background-size: contain;
+    }
+}
+
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    .centered {
+        position: fixed;
+        width: 25%;
+        top: 0%;
+        left: 70%;
+        text-align: left;
+        background-image: url("/static/img/boxstrip.png");
+        background-repeat: repeat-x;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        height: auto;
+        background-size: contain;
+    }
+
+    .disc {
+        padding-top: 14px;
+        line-height: 16px;
+    }
+}
+
+/*body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+*/
+
+.form-signin {
+  max-width: auto;
+  padding: auto;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: auto;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: auto;
+  font-size: auto;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: auto;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
