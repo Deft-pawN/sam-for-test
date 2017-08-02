@@ -8,13 +8,12 @@ import itchat
 import re
 matplotlib.use('Agg')
 
-
-
 d = path.dirname('.')
 text = open(path.join(d,'text.txt')).read()
 
 #set the background image
-alice_coloring = np.array(Image.open(path.join(d,"kawayi.jpg")))
+alice_coloring = np.array(Image.open(path.join(d,"04.jpg")))
+
 
 stopwords = set(STOPWORDS)
 stopwords.add('say')
